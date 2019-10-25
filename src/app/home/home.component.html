@@ -1,0 +1,33 @@
+
+<h1>Post ถึงเพื่อน</h1>
+<div class=" center">
+<form name="myForm" class="center"(ngSubmit)="addWiki(wikiForm)" #wikiForm="ngForm" style="width: 700px;">
+<label for="name"> Name : ชื่อเพื่อน</label>
+<input type="text" name="name"  ngModel>
+<label for="description"> Description</label>
+<input type="text" name="description" ngModel><br>
+<label for="img"> Picture : เลือกรูป /</label>
+<select name="img" ngModel>
+  <option value="alisa.jpg">alisa</option>
+  <option value="aof.jpg">aof</option>
+  <option value="boss.jpg">boss</option>
+  <option value="fha.jpg">fha</option>
+  <option value="folk.jpg">folk</option>
+  <option value="frank.jpg">frank</option>
+  <option value="ket.jpg">ket</option>
+  <option value="king.jpg">king</option>
+  <option value="may.jpg">may</option>
+  <option value="non.jpg">non</option>
+  <option value="pare.jpg">pare</option>
+  <option value="pat.jpg">pat</option>
+  <option value="pbenz.jpg">pbenz</option>
+  <option value="pham.jpg">pham</option>
+  <option value="phon.jpg">phon</option>
+  <option value="sirilak.jpg">sirilak</option>
+  <option value="tik.jpg">tik</option>
+  <option value="wat.jpg">wat</option>
+</select><br><br>
+<label for="sumit" style="color:rgb(253, 7, 7);">***กรอกให้ครบทุกช่อง</label>
+<button type="submit">Post</button>
+</form>
+

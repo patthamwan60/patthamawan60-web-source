@@ -1,22 +1,21 @@
 import { Component, OnInit } from '@angular/core';
+
 import {AngularFireDatabase, AngularFireList} from 'angularfire2/database';
 import {map} from 'rxjs/operators';
 import { from } from 'rxjs';
-
 @Component({
-  selector: 'app-card',
-  templateUrl: './card.component.html',
-  styleUrls: ['./card.component.scss']
+  selector: 'app-users',
+  templateUrl: './users.component.html',
+  styleUrls: ['./users.component.scss']
 })
-
-export class CardComponent implements OnInit {
+export class UsersComponent implements OnInit {
 
 
   users: AngularFireList<any>;
   user: any[]
 
   constructor(private db: AngularFireDatabase) {
-    this.users = db.list("/post");
+    this.users = db.list("/60114440181/user");
   }
 
   ngOnInit() {

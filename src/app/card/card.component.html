@@ -1,8 +1,14 @@
-<div class="card">
-  <img src="{{image}}" alt="Avatar" style="width:100%">
-  <div class="container">
-    <h4><b>{{name}}</b></h4>
-    <p>{{position}}</p>
+<p>
+<p>
+
+<div class="gallery" *ngFor="let u of user">
+  <a target="_blank" href="img_5terre.jpg">
+    <img src="{{'assets/images/'+u.value.img }}" alt="Avatar">
+  </a>
+  <div class="desc"><br/><h4>{{u.value.name }}</h4>
+  <p>{{u.value.description}}
   </div>
 </div>
+
+
 

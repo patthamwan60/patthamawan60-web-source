@@ -1,0 +1,13 @@
+<p>
+<p>
+<p>
+<h1 >Login</h1>
+<form class="center"action="" method="POST" style="width: 500px;">
+<p>
+
+    <label for="user"><b>User</b></label>
+    <input type="text" #user name="user" value="">
+    <label for="password"><b>Password</b></label>
+    <input type="password" #password name="password" value="">
+    <button type="button" (click)="login(user.value, password.value)">Login</button>
+  </form>
